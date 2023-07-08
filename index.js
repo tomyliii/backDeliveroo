@@ -10,7 +10,7 @@ app.use(cors());
 const config = { headers: { Authorization: `Bearer ${process.env.API_KEY}` } };
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Welcome on Delivroo server" });
+  res.status(200).json({ message: "Welcome on Deliveroo server" });
   try {
   } catch (error) {
     if (error.status) {
